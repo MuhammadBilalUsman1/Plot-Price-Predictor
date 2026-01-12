@@ -10,7 +10,8 @@ import { Select } from '../Select/Select';
 import { Button } from '../Button/Button';
 import { Alert } from '../Alert/Alert';
 import { useHousingPrediction } from '../../hooks/useHousingPrediction';
-import { housingPredictionSchema, HousingPredictionFormData } from '../../utils/validation';
+import { housingPredictionSchema } from '../../utils/validation';
+import type { HousingPredictionFormData } from '../../utils/validation';
 import { OCEAN_PROXIMITY_OPTIONS, FORM_FIELD_LABELS, FORM_FIELD_PLACEHOLDERS } from '../../utils/constants';
 import './HousingPredictionForm.css';
 
@@ -145,7 +146,7 @@ export const HousingPredictionForm: React.FC = () => {
             <Select
               {...register('ocean_proximity')}
               label={FORM_FIELD_LABELS.ocean_proximity}
-              options={OCEAN_PROXIMITY_OPTIONS}
+              options={[...OCEAN_PROXIMITY_OPTIONS]}
               error={errors.ocean_proximity?.message}
               required
             />

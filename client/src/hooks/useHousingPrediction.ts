@@ -3,7 +3,7 @@
  */
 import { useState, useCallback } from 'react';
 import { housingService } from '../services/housing.service';
-import { HousingPredictionInput, HousingPredictionResponse } from '../types/housing.types';
+import type { HousingPredictionInput, HousingPredictionResponse } from '../types/housing.types';
 
 interface UseHousingPredictionReturn {
   predict: (input: HousingPredictionInput) => Promise<void>;

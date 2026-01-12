@@ -2,7 +2,6 @@
  * Validation utilities and schemas
  */
 import { z } from 'zod';
-import { VALID_OCEAN_PROXIMITY } from './constants';
 
 export const housingPredictionSchema = z.object({
   longitude: z

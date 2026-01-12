@@ -1,9 +1,10 @@
 /**
  * Base API service with axios configuration
  */
-import axios, { AxiosInstance, AxiosError, AxiosResponse } from 'axios';
+import axios, { AxiosError } from 'axios';
+import type { AxiosInstance, AxiosResponse } from 'axios';
 import { API_BASE_URL } from '../utils/constants';
-import { ApiErrorResponse } from '../types/api.types';
+import type { ApiErrorResponse } from '../types/api.types';
 
 class ApiService {
   private client: AxiosInstance;

@@ -2,7 +2,7 @@
  * Housing prediction API service
  */
 import { apiClient } from './api.service';
-import {
+import type {
   HousingPredictionInput,
   HousingPredictionResponse,
   ModelInfoResponse,

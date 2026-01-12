@@ -1,4 +1,3 @@
-import React from 'react';
 import { ErrorBoundary } from './components/ErrorBoundary/ErrorBoundary';
 import { Layout } from './components/Layout/Layout';
 import { HousingPredictionForm } from './components/HousingPredictionForm/HousingPredictionForm';

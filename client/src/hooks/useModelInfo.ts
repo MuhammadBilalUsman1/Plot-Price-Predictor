@@ -3,7 +3,7 @@
  */
 import { useState, useEffect, useCallback } from 'react';
 import { housingService } from '../services/housing.service';
-import { ModelInfoResponse } from '../types/housing.types';
+import type { ModelInfoResponse } from '../types/housing.types';
 
 interface UseModelInfoReturn {
   modelInfo: ModelInfoResponse['data'] | null;

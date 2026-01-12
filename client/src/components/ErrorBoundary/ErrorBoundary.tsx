@@ -2,7 +2,8 @@
  * Error Boundary Component
  * Catches React errors and displays fallback UI
  */
-import React, { Component, ReactNode } from 'react';
+import React, { Component } from 'react';
+import type { ReactNode } from 'react';
 import { Card } from '../Card/Card';
 import { Button } from '../Button/Button';
 import { Alert } from '../Alert/Alert';
@@ -62,7 +63,7 @@ export class ErrorBoundary extends Component<Props, State> {
               <p>
                 An unexpected error occurred. Please try refreshing the page or contact support if the problem persists.
               </p>
-              {process.env.NODE_ENV === 'development' && this.state.error && (
+              {import.meta.env.MODE === 'development' && this.state.error && (
                 <details className="error-boundary-details">
                   <summary className="error-boundary-summary">Error Details (Development Only)</summary>
                   <pre className="error-boundary-stack">
