@@ -1,0 +1,1 @@
+frontend live on: https://plot-price-predictor-8qf546pjj-muhammad-bilal-usmans-projects.vercel.app/

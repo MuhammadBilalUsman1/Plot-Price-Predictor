@@ -40,11 +40,12 @@
   font-weight: 700;
   color: var(--color-success);
   line-height: 1.2;
+  text-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
 }
 
 .prediction-timestamp {
   font-size: 0.875rem;
-  color: var(--color-gray-600);
+  color: var(--color-text-muted);
 }
 
 @media (max-width: 640px) {
@@ -56,4 +57,3 @@
     font-size: 1.5rem;
   }
 }
-
